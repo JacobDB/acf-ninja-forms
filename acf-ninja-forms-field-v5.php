@@ -200,7 +200,7 @@ class acf_field_ninja_forms extends acf_field {
         $value[ $k ] = $form;
       }
     } else {
-      if ($nf_Version === 2) {
+      if ($nf_version === 2) {
         $value = ninja_forms_get_form_by_id( $value );
       } else {
         $form_object = Ninja_Forms()->form( $value )->get();
